@@ -9,14 +9,13 @@ const AboutTextCard = () => {
         <span className={s.purple}>Satish Kumar </span>
         from <span className={s.purple}> Patna, Bihar.</span>
         <br />
-        Web Developer with expertise in cross-platform development{' '}
-        <br />
-        using React.
+        Web Developer with expertise in Web development using React.
         <br />
         <br />
         I have a Bachelor's degree in Computer Science and
         <br />
-        Master's degree in Computer Science from Lovely Professional University.
+        Master's degree in Computer Science from Lovely Professional
+        University.
         <br />
         <br />
         Apart from coding, some other activities that I love to do!

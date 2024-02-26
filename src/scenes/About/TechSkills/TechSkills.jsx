@@ -1,4 +1,5 @@
 import s from './TechSkills.module.scss';
+import { SiRedux, SiAmazonaws } from 'react-icons/si';
 import {
   DiJavascript1,
   DiReact,
@@ -6,22 +7,15 @@ import {
   DiMongodb,
   DiGit,
   DiSass,
+  DiPhotoshop,
+  DiHtml5,
 } from 'react-icons/di';
-import {
-  SiTypescript,
-  SiRedux,
-  SiSocketdotio,
-  SiAmazonaws,
-} from 'react-icons/si';
 
 const TechSkills = () => {
   return (
     <ul className={s.container}>
       <li className={s.techIcon}>
         <DiJavascript1 />
-      </li>
-      <li className={s.techIcon}>
-        <SiTypescript />
       </li>
       <li className={s.techIcon}>
         <DiNodejs />
@@ -42,10 +36,13 @@ const TechSkills = () => {
         <SiRedux />
       </li>
       <li className={s.techIcon}>
-        <SiSocketdotio />
+        <DiGit />
       </li>
       <li className={s.techIcon}>
-        <DiGit />
+        <DiPhotoshop />
+      </li>
+      <li className={s.techIcon}>
+        <DiHtml5 />
       </li>
     </ul>
   );

@@ -5,12 +5,14 @@ import { useEffect, useRef, useState } from 'react';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import LinerProgress from '../../components/UIElements/LinerProgress/LinerProgress';
 import Button from '../../components/UIElements/Button/Button';
+import resumeLink from '../../assets/Resume.pdf';
 //react-pdf
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink = '';
+// const resumeLink =
+//   'https://drive.google.com/file/d/1gWW8aqjlw-F5vm1s-2ccLMsaGS3r391A/view?usp=drive_link';
 
 const Resume = () => {
   const pdfWrapper = useRef(null);
