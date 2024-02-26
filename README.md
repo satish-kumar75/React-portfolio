@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="https://sv-dev.netlify.app/" target="_blank">Sv.dev</a>
+  <a href="https://satishk-portfolio.vercel.app/" target="_blank">Satish Kumar</a>
 </h2>
 
 <div align="center">
@@ -17,14 +17,12 @@ This project built using these technologies:
 - React.js
 - SASS
 - Cloudinary
-- Workbox
-- Netlify
-- WebStorm
+- Vercel
 
 ## Getting Started
 
 ```bash
-$ git clone ...       # clone this project to your local machine
+$ git clone https://github.com/satish-kumar75/React-portfolio.git       # clone this project to your local machine
 $ cd react-portfolio  # go to project folder
 $ npm install         # install dependencies
 $ npm run start       # run it locally
