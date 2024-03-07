@@ -1,5 +1,6 @@
+import React from 'react';
 import s from './TechSkills.module.scss';
-import { SiRedux, SiAmazonaws } from 'react-icons/si';
+import { SiRedux, SiAmazonaws, SiMui, SiFigma } from 'react-icons/si';
 import {
   DiJavascript1,
   DiReact,
@@ -9,41 +10,34 @@ import {
   DiSass,
   DiPhotoshop,
   DiHtml5,
+  DiMysql,
 } from 'react-icons/di';
+
+const skillData = [
+  { icon: DiJavascript1, name: 'JavaScript' },
+  { icon: DiReact, name: 'React' },
+  { icon: DiNodejs, name: 'Node.js' },
+  { icon: DiMongodb, name: 'MongoDB' },
+  { icon: DiMysql, name: 'MySQL' },
+  { icon: DiSass, name: 'Sass' },
+  { icon: SiRedux, name: 'Redux' },
+  { icon: SiAmazonaws, name: 'Amazon AWS' },
+  { icon: DiGit, name: 'Git' },
+  { icon: SiMui, name: 'Material UI' },
+  { icon: SiFigma, name: 'Figma' },
+  { icon: DiHtml5, name: 'HTML5' },
+  { icon: DiPhotoshop, name: 'Photoshop' },
+];
 
 const TechSkills = () => {
   return (
     <ul className={s.container}>
-      <li className={s.techIcon}>
-        <DiJavascript1 />
-      </li>
-      <li className={s.techIcon}>
-        <DiNodejs />
-      </li>
-      <li className={s.techIcon}>
-        <DiReact />
-      </li>
-      <li className={s.techIcon}>
-        <DiMongodb />
-      </li>
-      <li className={s.techIcon}>
-        <DiSass />
-      </li>
-      <li className={s.techIcon}>
-        <SiAmazonaws />
-      </li>
-      <li className={s.techIcon}>
-        <SiRedux />
-      </li>
-      <li className={s.techIcon}>
-        <DiGit />
-      </li>
-      <li className={s.techIcon}>
-        <DiPhotoshop />
-      </li>
-      <li className={s.techIcon}>
-        <DiHtml5 />
-      </li>
+      {skillData.map((skill, index) => (
+        <li key={index} className={s.techIcon}>
+          <skill.icon />
+          <div className={s.techName}>{skill.name}</div>
+        </li>
+      ))}
     </ul>
   );
 };

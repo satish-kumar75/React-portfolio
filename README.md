@@ -22,7 +22,7 @@ This project built using these technologies:
 ## Getting Started
 
 ```bash
-$ git clone https://github.com/satish-kumar75/React-portfolio.git       # clone this project to your local machine
+$ git clone https://github.com/satish-kumar75/React-portfolio.git   # clone this project to your local machine
 $ cd react-portfolio  # go to project folder
 $ npm install         # install dependencies
 $ npm run start       # run it locally

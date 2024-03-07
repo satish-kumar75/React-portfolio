@@ -1,6 +1,7 @@
 import s from './ModalProjectCard.module.scss';
 import projects from '../../../data/projects';
 import { BiLinkExternal } from 'react-icons/bi';
+import { BiCodeAlt } from 'react-icons/bi';
 import Modal from '../../../components/Modal/Modal';
 import Button from '../../../components/UIElements/Button/Button';
 import { useParams } from 'react-router-dom';
@@ -58,7 +59,7 @@ const ModalProjectCard = () => {
               href={links.repo}
               target="_blank"
             >
-              <BiLinkExternal /> &nbsp; Know more
+              <BiCodeAlt /> &nbsp; Code
             </Button>
           )}
         </div>

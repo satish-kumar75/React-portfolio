@@ -1,5 +1,7 @@
+import React from 'react';
 import s from './GithubActivity.module.scss';
 import GitHubCalendar from 'react-github-calendar';
+import ReactTooltip from 'react-tooltip';
 
 const GithubActivity = () => {
   const colorTheme = {
@@ -19,7 +21,15 @@ const GithubActivity = () => {
         blockMargin={5}
         theme={colorTheme}
         fontSize={16}
-      />
+        tooltips={true}
+      >
+        <ReactTooltip
+          delayShow={50}
+          html
+          backgroundColor="var(--bg)"
+          textColor="#fff"
+        />
+      </GitHubCalendar>
     </div>
   );
 };
